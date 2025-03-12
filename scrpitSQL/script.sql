@@ -1,7 +1,10 @@
-create database db_lab7;
-use db_lab7;
-CREATE TABLE users (
+CREATE DATABASE students_db;
+USE students_db;
+
+CREATE TABLE IF NOT EXISTS students (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    class VARCHAR(50) NOT NULL,
+    major VARCHAR(100) NOT NULL
 );
